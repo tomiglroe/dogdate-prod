@@ -19,7 +19,7 @@ function getPublications(req, res) {
 
     if (err) return res.status(500).send({ message: 'Error al devolver los usuarios que sigo' });
 
-    let follows_clean = [];
+    let follows_clean = [req.user.sub];
 
     follows.forEach((follow) => {
 
