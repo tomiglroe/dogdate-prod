@@ -31,7 +31,7 @@ function getPublications(req, res) {
 
       if (err) return res.status(500).send({ message: 'Error al devolver publicaciones' });
 
-      if (!publications) return res.status(404).send({ message: ' No existen publicaciones'});
+      if (!publications) return res.status(404).send({ message: ' No existen ninguna publicación'});
 
       return res.status(200).send({
 
