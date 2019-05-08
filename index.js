@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const app = require('./app');
 const port = 3800;
 
-
 //Conexión a la base de datos
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/dogdatedbpmv', { useNewUrlParser: true })
